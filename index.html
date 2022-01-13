@@ -7,13 +7,13 @@
   <title>Hello WebXR!</title>
 
   <!-- three.js -->
-  <script src="https://unpkg.com/three@0.126.0/build/three.js"></script>
+  <script src="lib/three.js"></script>
 </head>
 <body>
 
 <!-- Starting an immersive WebXR session requires user interaction.
     We start this one with a simple button. -->
-<!-- <button onclick="activateXR()">Start Hello WebXR</button> -->
+<button onclick="activateXR()">Start Hello WebXR</button>
 <script>
 
 
@@ -101,7 +101,7 @@ const onXRFrame = (time, frame) => {
 }
 session.requestAnimationFrame(onXRFrame);
 
-window.onload = activateXR;
+// window.onload = activateXR;
 
 </script>
 </body>
